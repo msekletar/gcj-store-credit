@@ -19,7 +19,6 @@ static int get_int_from_stdin(int *i) {
 	if (r != 1)
 		return -errno;
 
-	scanf("%*[ \n\t]");
 	return r;
 }
 
