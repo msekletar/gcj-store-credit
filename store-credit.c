@@ -85,6 +85,7 @@ static void solve(int case_num, int credit, int num_items, int *prices) {
 		price_list[i].index = i;
 	}
 
+	/* FIXME: qsort may or may not be stable, use stable sorting algorithm instead */
 	qsort(price_list, num_items, sizeof(*price_list), cmp_prices);
 
 	for (i = 0; i < num_items; ++i) {
